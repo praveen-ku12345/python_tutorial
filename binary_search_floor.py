@@ -16,5 +16,6 @@ def binary_search(numbers,target):
     return result
 numbers=list(map(int,input("enter the numbers separeted by the comma :").split(",")))
 target=int(input("enetr the target element"))
-x=binary_search(numbers,target)
+x=binary
+_search(numbers,target)
 print(x)

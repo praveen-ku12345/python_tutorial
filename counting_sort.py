@@ -8,13 +8,24 @@
 #     print("Sorted Array:", sorted_result)
 # except ValueError:
 #     print("Please enter a valid list of integers.")
+# from collections import Counter
+# def counting_sort(numbers):
+#     count=Counter(numbers)
+#     return [i for i,j in sorted(count.items()) for k in range(j)]
+# try:
+#     numbers=list(map(int,input("enter the numbers separeted by space :").split()))
+#     x=counting_sort(numbers)
+#     print(x)
+# except:
+#     print("plaese enter only numbers:")
+
 from collections import Counter
 def counting_sort(numbers):
     count=Counter(numbers)
     return [i for i,j in sorted(count.items()) for k in range(j)]
 try:
-    numbers=list(map(int,input("enter the numbers separeted by space :").split()))
-    x=counting_sort(numbers)
-    print(x)
+    numbers=list(map(int,input("enter the numbers separeted by the space :").split()))
+    result=counting_sort(numbers)
+    print(result)
 except:
-    print("plaese enter only numbers:")
+    print("enter the only numbers ")
